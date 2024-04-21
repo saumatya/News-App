@@ -6,7 +6,7 @@ import HeadlineNews from "./HeadlinesNews";
 
 
 function App() {
-  
+
   const [keyword, setKeyword] = useState("");
   const [language, setLanguage] = useState("en");
   const [fromDate, setFromDate] = useState("");
@@ -49,7 +49,6 @@ function App() {
       event.preventDefault(); // Prevent form submission default behavior
     }
     try {
-      //let url = `https://newsapi.org/v2/everything?q=${keyword}&language=${language}&apiKey=96bd930538c947b6bd2094092ad579e8&pageSize=10&page=${currentPage}&sortBy=${sortBy}`;
       let url = `https://newsapi.org/v2/everything?q=${keyword}&language=${language}&apiKey=${process.env.REACT_APP_NEWS_API_KEY}&pageSize=10&page=${currentPage}&sortBy=${sortBy}`;
       
       if (fromDate) {
