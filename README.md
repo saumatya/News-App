@@ -1,7 +1,12 @@
 # News App
 
 ## Overview
-The News App is a React-based application designed to allow users to search for news articles using various filters such as keywords, languages, and date ranges. Leveraging the NewsAPI, the app fetches news articles based on user preferences and displays them in a responsive UI, with pagination controls to navigate through results.
+The News App is a React-based application designed to allow users to search for news articles using various filters such as keywords, languages, and date ranges. With the [NewsAPI](https://newsapi.org/docs)
+, the app fetches news articles based on user preferences and displays them in a responsive UI, with pagination controls to navigate through results.
+
+## How to use?
+- Register for a News API key from [NewsAPI](https://newsapi.org/) and store it securely.
+- Create a .env file to store your API key (e.g., REACT_APP_NEWS_API_KEY=your-api-key-here).
 
 ## Key Features
 - Dynamic search functionality
