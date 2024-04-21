@@ -58,6 +58,14 @@ These testing methodologies ensured thorough validation of the application's fun
 4. Navigate through the search results using pagination controls.
 5. Optionally toggle the display of headline news for additional information.
 
+## Challenges Encountered
+
+### Rate Limiting Issue with NewsAPI
+During the development and testing phase, one significant challenge arose related to the rate limiting restrictions imposed by the NewsAPI. The API allows only 50 requests every 12 hours for developer accounts, with a maximum of 100 requests per day. As I was testing and refining the application's functionalities, I encountered the Status 429 "Too many requests" error, indicating that the rate limit had been exceeded. I had to register a new API key from new email.
+
+#### Resolution
+When I encountered the rate limiting issue it made me to consider broader aspects of error handling and user feedback. I realized the importance of informing users when the API returns an error status code or fails to respond. To address this, I implemented features such as displaying a "No results found" message when no news items are fetched. Additionally, I included console error logging to identify and debug any errors that arise during API interactions. These measures ensure that users are informed of any issues and provide a means for developers to diagnose and resolve problems effectively in the future.
+
 
 
 
