@@ -1,0 +1,15 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px; /* Adjust as needed */
+    background-color: rgb(210, 211, 207);
+  }
+
+  
+  .text {
+    margin: 0 10px; /* Adjust spacing around the text */
+    font-family: 'Georgia', serif; /* Use a serif font for a newspaper-like style */
+    font-size: 44px; /* Adjust the font size as needed */
+    font-weight: bold; /* Make the text bold for emphasis */
+  }
+  
